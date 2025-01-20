@@ -1,4 +1,4 @@
-rule php_webshell_shin {
+rule WEBSHELL_LNX_PHP_Shin {
     meta:
         author = "Niels Heinen <niels.heinen<at>gmail.com>"
         date = "2025-01-20"
