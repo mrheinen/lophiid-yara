@@ -1,4 +1,4 @@
-rule php_uploader_xploitsec {
+rule WEBSHELL_PHP_Uploader_Xploitsec_TINY {
     meta:
         author = "Niels Heinen <niels.heinen<at>gmail.com>"
         date = "2025-01-20"
