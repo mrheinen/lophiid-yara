@@ -1,8 +1,8 @@
-rule php_webshell_pony_ui {
+rule WEBSHELL_PHP_P0wny {
     meta:
         author = "Niels Heinen <niels.heinen<at>gmail.com>"
         date = "2025-01-20"
-        description = "Finds PHP Pony web shell UI element"
+        description = "Finds PHP P0wny web shell UI element"
 
     strings:
         $html_tag = "<!DOCTYPE html>"
