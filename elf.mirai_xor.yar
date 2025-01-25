@@ -5,10 +5,11 @@ rule elf_mirai_xor_ioc {
         description = "Finds XOR obfuscated Mirai IOC's"
 
     strings:
-        $sa = "pool.rentcheapcars.sbs" xor(0x31-0x4f)
-        $sb = "iranistrash.libre" xor(0x01-0x1a)
-        $sc = "api.opennic.org" xor(0x31-0x4f)
-        $sd = "stun.mitake.com.tw" xor(0x01-0x0a)
+        $sa = "pool.rentcheapcars.sbs" xor
+        $sb = "iranistrash.libre" xor
+        $sc = "stun.mitake.com.tw" xor
+        $sd = "TxID and IP Range/ASN" xor
+        $se = "to be blacklisted from this and future botnets from us." xor
 
     condition:
        uint16(0) == 0x457f and filesize < 120KB and all of ($s*)
