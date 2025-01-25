@@ -2,7 +2,7 @@ rule PUA_LNX_Agent_Packetsdk {
     meta:
         author = "Niels Heinen <niels.heinen<at>gmail.com>"
         date = "2025-01-25"
-        description = "Finds a Packetsdk agent"
+        description = "Finds a Packetsdk agent which creates network tunnels"
 
     strings:
       $d1 = "packetsdk.net"
