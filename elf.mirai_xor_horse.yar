@@ -1,4 +1,4 @@
-rule ELF_Mirai_xor_horse.yara {
+rule ELF_Mirai_xor_horse {
     meta:
         author = "Niels Heinen <niels.heinen<at>gmail.com>"
         date = "2025-01-19"
